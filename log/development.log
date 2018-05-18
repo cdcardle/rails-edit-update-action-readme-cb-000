@@ -509,3 +509,13 @@ Processing by PostsController#show as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
   Rendered posts/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for 68.40.63.148 at 2018-05-18 16:50:24 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ppdkqCUzscv+Jr5LivXDI0/rwzV5ImGZc3/s7ASLEKVs10/M4+Qob6tcn5nqjbYWS7a6wX5K1E38ImLh6DUxIw==", "title"=>"Post A Hoy", "description"=>"Habba Labba Doo", "commit"=>"Submit Post"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Post A Hoy"], ["description", "Habba Labba Doo"], ["created_at", "2018-05-18 16:50:24.387560"], ["updated_at", "2018-05-18 16:50:24.387560"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://174.138.35.103:39906/posts/5
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms)
