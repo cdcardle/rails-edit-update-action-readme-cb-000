@@ -629,3 +629,11 @@ Processing by PostsController#update as HTML
   [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
 Redirected to http://174.138.35.103:39906/posts/2
 Completed 302 Found in 64ms (ActiveRecord: 58.7ms)
+
+
+Started GET "/posts/2" for 68.40.63.148 at 2018-05-18 16:57:32 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.1ms)
