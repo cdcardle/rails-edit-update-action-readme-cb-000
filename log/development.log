@@ -578,3 +578,15 @@ RuntimeError ({"utf8"=>"✓", "_method"=>"put", "authenticity_token"=>"gnpnjOpTL
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.4ms)
+
+
+Started PUT "/posts/2" for 68.40.63.148 at 2018-05-18 16:55:00 +0000
+
+SyntaxError (/home/cdcardle/rails-edit-update-action-readme-cb-000/app/controllers/posts_controller.rb:28: syntax error, unexpected '='
+... params[:title], description: = params[:description])
+...                               ^
+/home/cdcardle/rails-edit-update-action-readme-cb-000/app/controllers/posts_controller.rb:28: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/posts_controller.rb:28: syntax error, unexpected '='
+  app/controllers/posts_controller.rb:28: syntax error, unexpected ')', expecting keyword_end
+
+
