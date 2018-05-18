@@ -483,3 +483,11 @@ Processing by PostsController#create as HTML
   [1m[36m (57.6ms)[0m  [1mcommit transaction[0m
 Redirected to http://174.138.35.103:39906/posts/3
 Completed 302 Found in 70ms (ActiveRecord: 58.1ms)
+
+
+Started GET "/posts/3" for 68.40.63.148 at 2018-05-18 16:47:01 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.1ms)
